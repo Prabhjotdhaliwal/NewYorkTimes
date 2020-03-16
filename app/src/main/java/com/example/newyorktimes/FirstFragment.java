@@ -48,11 +48,16 @@ public class FirstFragment extends Fragment {
             public void onResponse(Call<NewYorkTimes> call, Response<NewYorkTimes> response)
             {
              System.out.println("jot123");
+                NewYorkTimes newYorkTimes=new NewYorkTimes();
+                       newYorkTimes =response.body();
+              //  Weather weather=response.body();
 
                 try {
-                    NewYorkTimes newYorkTimes=response.body();
 
-                    resultarray=new ArrayList<>(newYorkTimes.getResults());
+                  //  resultarray=new ArrayList<>(newYorkTimes.getResults());
+                 //   int i=newYorkTimes.getNumResults();
+                 //   System.out.println(i);
+
                     System.out.println("jot456");
              }
 
