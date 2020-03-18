@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/firstmenu"
+            android:title=" First Fragment"
+
+            >
+
+        </item>
+        <item
+            android:id="@+id/secondmenu"
+            android:title="Second Fragment"
+
+            >
+
+        </item>
+        <item
+            android:id="@+id/thirdmenu"
+            android:title="Third Fragment"
+
+            >
+
+        </item>
+        <item
+            android:id="@+id/fourthmenu"
+            android:title="Fourth Fragment"
+
+            >
+
+        </item>
+        <item
+            android:id="@+id/fifthmenu"
+            android:title="Fifth Fragment"
+
+            >
+
+        </item>
+
+
+    </group>
+
+
+
+
+</menu>

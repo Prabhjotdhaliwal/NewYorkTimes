@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FifthFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/f_title5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="fff"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/f_abstact5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="fff"
+
+            />
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/f_caption5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fff"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:id="@+id/f_copyright5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fff"
+            android:layout_marginLeft="10dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/f_byline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="f_byline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/f_createdDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created:"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:id="@+id/f_updatedDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Updated:"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/f_createdDate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+
+                />
+            <TextView
+                android:id="@+id/f_updatedDate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</LinearLayout>
