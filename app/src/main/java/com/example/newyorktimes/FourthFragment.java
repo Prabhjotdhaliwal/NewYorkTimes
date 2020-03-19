@@ -50,7 +50,7 @@ public class FourthFragment extends Fragment {
         byline4=view.findViewById(R.id.f_byline4);
         createddate4=view.findViewById(R.id.f_createdDate4);
         updateddate4=view.findViewById(R.id.f_updatedDate4);
-        ccpy4=view.findViewById(R.id.f_ccpy2);
+        ccpy4=view.findViewById(R.id.f_ccpy4);
 
         image4=view.findViewById(R.id.img4);
 

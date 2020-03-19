@@ -53,7 +53,7 @@ public class FifthFragment extends Fragment {
         byline5=view.findViewById(R.id.f_byline5);
         createddate5=view.findViewById(R.id.f_createdDate5);
         updateddate5=view.findViewById(R.id.f_updatedDate5);
-        ccpy5=view.findViewById(R.id.f_ccpy2);
+        ccpy5=view.findViewById(R.id.f_ccpy5);
         image5=view.findViewById(R.id.img5);
 
 

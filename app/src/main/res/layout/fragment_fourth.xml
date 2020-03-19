@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
     android:orientation="vertical"
-    android:background="#82E0AA"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -127,6 +126,7 @@
                 android:id="@+id/f_ccpy4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=""
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"

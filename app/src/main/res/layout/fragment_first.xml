@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
     android:orientation="vertical"
-    android:background="#82E0AA"
     >
 
 <LinearLayout
