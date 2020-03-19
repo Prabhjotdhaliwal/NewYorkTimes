@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ///tyyuy
-        System.out.println("dgffg");
         setUpNavigation();
     }
 
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
 
         drawerLayout = findViewById(R.id.drawer_layout);
-
 
         navigationView = findViewById(R.id.navigation_view);
 
@@ -74,29 +72,29 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         switch (id) {
             case R.id.firstmenu:
 
-                Toast.makeText(getApplicationContext(), "First clicked", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getApplicationContext(), "First clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.firstFragment);
                 break;
 
             case R.id.secondmenu:
 
-                Toast.makeText(getApplicationContext(), "Second clicked", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getApplicationContext(), "Second clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.secondFragment);
                 break;
 
             case R.id.thirdmenu:
 
-                Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.thirdFragment);
                 break;
             case R.id.fourthmenu:
 
-                Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.fourthFragment);
                 break;
                 case R.id.fifthmenu:
 
-                Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.fifthFragment);
                 break;
 

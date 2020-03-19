@@ -8,26 +8,26 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.newyorktimes.FirstFragment"
-        android:label="NewYorkTimes-Home"
+        android:label="NewYorkTimes-Section 1"
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.newyorktimes.SecondFragment"
-        android:label="NewYorkTimes-second"
+        android:label="NewYorkTimes-Section 2"
         tools:layout="@layout/fragment_second" />
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.newyorktimes.ThirdFragment"
-        android:label="NewYorkTimes-third"
+        android:label="NewYorkTimes-Section 3"
         tools:layout="@layout/fragment_third" />
     <fragment
         android:id="@+id/fifthFragment"
         android:name="com.example.newyorktimes.FifthFragment"
-        android:label="NewYorkTimes-fifth"
+        android:label="NewYorkTimes-Section 5"
         tools:layout="@layout/fragment_fifth" />
     <fragment
         android:id="@+id/fourthFragment"
         android:name="com.example.newyorktimes.FourthFragment"
-        android:label="NewYorkTimes-fourth"
+        android:label="NewYorkTimes-Section 4"
         tools:layout="@layout/fragment_fourth" />
 </navigation>

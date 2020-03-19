@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,8 @@ import retrofit2.Response;
 public class FourthFragment extends Fragment {
     private NavController navController;
     List<Result> resultarray=new ArrayList<>();
-    TextView title4,abstact4,caption4,copyright4,byline4,createddate4,updateddate4;
+    List<Multimedium> mutimediaArray=new ArrayList<>();
+    TextView title4,abstact4,caption4,copyright4,byline4,createddate4,updateddate4,ccpy4;
     ImageView image4;
     public FourthFragment() {
         // Required empty public constructor
@@ -47,6 +50,8 @@ public class FourthFragment extends Fragment {
         byline4=view.findViewById(R.id.f_byline4);
         createddate4=view.findViewById(R.id.f_createdDate4);
         updateddate4=view.findViewById(R.id.f_updatedDate4);
+        ccpy4=view.findViewById(R.id.f_ccpy2);
+
         image4=view.findViewById(R.id.img4);
 
 
@@ -69,28 +74,37 @@ public class FourthFragment extends Fragment {
                 try {
 
                     String status=newYorkTimes.getStatus();
-                    System.out.println(status);
                     String copyright=newYorkTimes.getCopyright();
-                    System.out.println(copyright);
                     String section=newYorkTimes.getSection();
-                    System.out.println(section);
                     String lastUpdated=newYorkTimes.getLastUpdated();
-                    System.out.println(lastUpdated);
                     int numResults=newYorkTimes.getNumResults();
-                    System.out.println(numResults);
-
                     resultarray=(newYorkTimes.getResults());
-                    System.out.println(resultarray);
-                    System.out.println("jot456");
-
                     String section1=resultarray.get(0).getSection();
-                    //System.out.println(section1);
+                    System.out.println(section1);
                     String subSection1=resultarray.get(4).getSubsection();
                     System.out.println(subSection1);
-                    String abstract1 =resultarray.get(4).getAbstract();
-                    System.out.println(abstract1);
-                    String byLine=resultarray.get(4).getByline();
-                    System.out.println(byLine);
+
+                    //get Values from API
+                    String titleStr=resultarray.get(4).getTitle();
+                    String abstactStr=resultarray.get(4).getAbstract();
+                    String byLineStr=resultarray.get(4).getByline();
+                    String createdDateStr=resultarray.get(4).getCreatedDate();
+                    String updatedDateStr=resultarray.get(4).getUpdatedDate();
+                    mutimediaArray=resultarray.get(4).getMultimedia();
+                    String url1=mutimediaArray.get(4).getUrl();
+                    String captionStr=mutimediaArray.get(4).getCaption();
+                    String copyrightStr=mutimediaArray.get(4).getCopyright();
+
+                    //Set values to the UI elements
+                    title4.setText(titleStr);
+                    abstact4.setText(abstactStr);
+                    caption4.setText(captionStr);
+                    copyright4.setText(copyrightStr);
+                    byline4.setText(byLineStr);
+                    createddate4.setText(createdDateStr);
+                    updateddate4.setText(updatedDateStr);
+                    ccpy4.setText(copyright);
+                    Picasso.get().load(url1).into(image4);
                 }
 
                 catch (NullPointerException e)

@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#82E0AA"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="fff"
+            android:text=""
+            android:textColor="#17202A"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <TextView
@@ -24,15 +27,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:text="fff"
+            android:text=""
 
-            />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         <ImageView
             android:id="@+id/img3"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/nyc"
             >
 
         </ImageView>
@@ -40,7 +45,7 @@
             android:id="@+id/f_caption3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="fff"
+            android:text=""
             android:layout_marginLeft="10dp"
 
             />
@@ -48,20 +53,21 @@
             android:id="@+id/f_copyright3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="fff"
+            android:text=""
             android:layout_marginLeft="10dp"
 
             />
+
         <TextView
             android:id="@+id/f_byline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="f_byline"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            android:text=""
 
 
-            />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,22 +77,23 @@
                 android:id="@+id/f_createdDate1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Created:"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Created:"
 
-                />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
             <TextView
                 android:id="@+id/f_updatedDate1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Updated:"
                 android:layout_marginLeft="140dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Updated:"
 
-                />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,7 +104,7 @@
                 android:id="@+id/f_createdDate3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="fff"
+                android:text=""
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
 
@@ -106,7 +113,21 @@
                 android:id="@+id/f_updatedDate3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="rr"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/f_ccpy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
 
