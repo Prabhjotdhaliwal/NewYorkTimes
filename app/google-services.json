@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "670159993644",
+    "firebase_url": "https://newyorktimes-630a9.firebaseio.com",
+    "project_id": "newyorktimes-630a9",
+    "storage_bucket": "newyorktimes-630a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670159993644:android:bd3f0d6af792e4aa4e8a89",
+        "android_client_info": {
+          "package_name": "com.example.newyorktimes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670159993644-s2kfoiu6rome1n3pgivl0ges6eq2nd9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newyorktimes",
+            "certificate_hash": "4b2687d1ea6bd09523f1e6a929a97244d849d456"
+          }
+        },
+        {
+          "client_id": "670159993644-ainbem8rurboh6n2to654r7hu0naulrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwTDDx8tsAb03m470rbg4EWUSQd32BzJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670159993644-ainbem8rurboh6n2to654r7hu0naulrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
