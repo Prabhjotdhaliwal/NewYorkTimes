@@ -9,17 +9,21 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
     public Toolbar toolbar;
     public DrawerLayout drawerLayout;
     public NavController navController;
     public NavigationView navigationView;
+    FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,12 +96,20 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
               //  Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.fourthFragment);
                 break;
+
                 case R.id.fifthmenu:
 
              //   Toast.makeText(getApplicationContext(), "Third clicked", Toast.LENGTH_SHORT).show();
                 navController.navigate(R.id.fifthFragment);
                 break;
+            case R.id.LogOut:
+                firebaseAuth.getInstance().signOut();
+                startActivity(new Intent (MainActivity.this, Main1Activity.class));
+                finish();
+                return true;
 
+            default:
+                return false;
         }
 
         return false;

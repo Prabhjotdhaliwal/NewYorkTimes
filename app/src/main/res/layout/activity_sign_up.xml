@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SignLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#649600"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/LogoimageView11"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/nycc1" />
+    <EditText
+        android:id="@+id/NameeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text">
+
+    </EditText>
+    <EditText
+        android:id="@+id/EmaileditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Phone"
+         />
+
+    <EditText
+        android:id="@+id/Password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/SignUpbutton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="SignUp" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Already Registered?Login Here"></TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
